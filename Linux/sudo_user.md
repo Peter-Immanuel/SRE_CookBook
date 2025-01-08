@@ -27,7 +27,8 @@
 - sudo systemctl (start | stop | status | restart) nginx
 
 
-
-
-
-
+### Setup Certbot for SSL certificates
+- sudo apt install certbot python3-certbot-nginx
+- Create you server block under /etc/nginx/sites-available/_name_
+- Create a symbolic link between site-availabe and site-enabled eg 
+sudo ln -s /etc/nginx/sites-available/_example.com_ /etc/nginx/sites-enabled/
